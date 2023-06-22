@@ -5,10 +5,13 @@ public class ExceptionHandling {
 	public static void main(String[] args) {
 		
 		try {
-			int num = 100/5;
+			int num = 100/0;
 			System.out.println(num);
 		} catch (Exception e) {
-			System.out.println(e);
+//			e.printStackTrace();
+//			System.out.println(e.toString());
+			System.out.println(e.getMessage());
+			
 		}
 
 		System.out.println("Rest of code");
